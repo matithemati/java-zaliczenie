@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/api")
+@RestController
+@RequestMapping("/api")
 @AllArgsConstructor
 public class MainController {
 
@@ -19,7 +20,7 @@ public class MainController {
     private MainService mainService;
 
     @GetMapping("/property")
-    public ResponseEntity<?> getProperty(@RequestParam String name) {
+    public ResponseEntity<String> getProperty(@RequestParam String name) {
         String property = env.getProperty(name);
 
         if (property == null) {

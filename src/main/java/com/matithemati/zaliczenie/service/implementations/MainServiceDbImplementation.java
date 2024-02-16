@@ -39,6 +39,10 @@ public class MainServiceDbImplementation implements MainService {
 
     @Override
     public Book createBook(BookDto book) {
+        if (book == null) {
+            throw new NullPointerException("Book cannot be null");
+        }
+
         return modelMapper.map(bookRepository.save(modelMapper.map(book, BookDbModel.class)), Book.class);
     }
 
