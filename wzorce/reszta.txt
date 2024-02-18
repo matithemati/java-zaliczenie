@@ -1,0 +1,14 @@
+5 dobrych praktyk:
+- Dzielenie kodu na mniejsze moduły
+- Stosowanie wzorców projektowych
+- Stosowanie zmiennych o znaczących nazwach
+- Stosowanie komentarzy w kodzie
+- Stosowanie testów jednostkowych
+
+
+
+Antywzorzec "Spaghetti code" - kod, który jest trudny do
+zrozumienia, z powodu zbyt dużej liczby zależności między
+poszczególnymi elementami kodu. Jest to zazwyczaj wynik
+braku zastosowania odpowiednich wzorców projektowych, a
+także zbyt dużej liczby zagnieżdżeń i powtórzeń kodu.
